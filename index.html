@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MORTY</title>
+    <link rel="icon" type="image/x-icon" href="../../AppIcon/ahapps.controlthescreenorientation.png">
+    <link rel="stylesheet" href="css/loading.css">
+</head>
+<body>
+    <div class="back">
+        <span>
+            <
+        </span>
+        <span>
+            Mekdad
+        </span>
+        <span>
+            &nbsp;
+        </span>
+        <span>
+            Ghazal
+        </span>
+        <span>
+            />
+        </span>
+    </div>
+    <div class="container">
+        <div class="shape">
+        </div>
+        <div class="path">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="shape"></div>
+
+    <script>
+        const delay = Math.floor(Math.random() * 4) + 3.5;
+        var shape = document.getElementById('shape'),
+            delay1 = delay - 0.9 ;
+
+        function redirectToBot() {
+            setTimeout(function() {
+                shape.style.scale = 10000;
+            }, delay1 * 1000);
+            setTimeout(function() {
+                window.location.href = 'portfolio.html';
+            }, delay * 1000);
+        }
+
+        redirectToBot();
+    </script>
+</body>
+</html>

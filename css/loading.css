@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    
+    height: 100vh;
+    overflow:hidden;
+    //animation: coloring 5s infinite ease-in-out alternate;
+    
+}
+        
+
+.back{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 95vh;
+    transform: translate(-50%,-50%);
+    background: rgba( 255, 255, 255,.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    //box-shadow:  0 0 8px 0px rgb(70 130 180 / 90%), 0 0 20px 0px rgb(0 0 0 / 80%);
+   
+}
+.back span{
+    font-family: monospace;
+    padding: 185px 0 0 0;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: large;
+    animation: colorin 5s infinite ease-in-out alternate
+             , float 3s infinite ease-in-out alternate;
+}
+.container{
+    width: 75px;
+    height: 90px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%) scale(1.5);
+    overflow-x: hidden;
+}
+
+.shape{
+    width: 50px;
+    height: 50px;
+    background-color: steelblue;
+    position: absolute;
+    border-radius: 5px;
+    top: 43px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: circle .5s cubic-bezier(0.7, 0, 0.3, 1) infinite ,
+    coloring 5s infinite ease-in-out alternate ;
+}
+div.path{
+    animation: walk .5s cubic-bezier(0.7, 0, 0.3, 1)infinite;
+    top: 85%;
+    position: relative;
+}
+div.path span{
+    width: 10px;
+    height: 10px;
+    border-radius: 2px;
+    background-color: steelblue;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%);
+    animation: coloring 5s infinite ease-in-out alternate;
+
+}
+div.path :first-child{
+    left: 12.5px;
+}
+div.path :nth-child(2){
+    left: 62.5px;
+}
+div.path :last-child{
+    left: 112.5px;
+}
+
+
+#shape{
+    width: 5px;
+    height: 5px;
+    animation: coloring 5s infinite ease-in-out alternate;
+    scale: 1;
+    z-index: 1018;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    transition: 1.3s;
+}
+
+
+
+@keyframes circle {
+    to{
+        transform: translate(-50%,-50%) rotate(90deg);
+    }
+    
+}
+@keyframes walk {
+    to{
+        transform : translate(-50px)
+    }
+}
+
+
+@keyframes float {
+    to{
+        translate: 0  60px;
+    }
+}
+
+
+/* 
+    background 
+*/
+
+@keyframes coloring {
+    0% {
+        background-color: #f79533;
+    }
+    15% {
+        background-color: #f37055;
+    }
+    30% {
+        background-color: #ef4e7b;
+    }
+    45% {
+        background-color: #a166ab;
+    }
+    60% {
+        background-color: #5073b8;
+    }
+    75% {
+        background-color: #1098ad;
+    }
+    90% {
+        background-color: #07b39b;
+    }
+    100% {
+        background-color: #6fba82;
+    }
+}
+@keyframes colorin {
+    0% {
+        color: #f79533;
+    }
+    15% {
+        color: #f37055;
+    }
+    30% {
+        color: #ef4e7b;
+    }
+    45% {
+        color: #a166ab;
+    }
+    60% {
+        color: #5073b8;
+    }
+    75% {
+        color: #1098ad;
+    }
+    90% {
+        color: #07b39b;
+    }
+    100% {
+        color: #6fba82;
+    }
+}
+

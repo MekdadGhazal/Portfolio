@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Title  -->
+	<title>Mekdad -Resume</title>
+	
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="f2.jpg">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
+    <link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="js.js"></script>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script>
+        (function(){
+          emailjs.init({
+            publicKey: "-INPpI4RrKOcSfiiG",
+          });
+       })();
+    </script>
+</head>
+<body>
+    <div class="main">
+            <div class="container" style="height: 0;">
+                <div class="alert alert-success alert-dismissible fade show d-none alert-message" role="alert" id="alert-message-success">
+                            Email sent successfully!
+                </div>
+                <div class="alert alert-danger alert-dismissible fade show alert-message d-none" role="alert" id="alert-message-failed">
+                          Failed to send email! [Try using VPN]
+                </div>
+            </div>
+
+            <!-- Header -->
+            <div class="container sticky">
+                <header class="text-center p-2 mt-1 fw-bold d-flex my-md-4 bg" style="z-index: 150; border-bottom: .1pc solid;">
+                    <div class="logo">
+                        MEKDAD GHAZAL
+                        <div  class="d-none d-md-block">
+                            <div id="button" onclick="theme();">
+                                <i class="bi bi-sun-fill" id="buttonShape" style="font-size: 16px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-md-block">
+                        <ul class="d-flex g-5 list-style-none m-0 p-1 pc-list">
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-block d-md-none" id="lista">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </div>
+                </header>
+                <div class="mt-0 my-3 pt-0 p-2 d-block d-md-none listed bg" id="dropList" style="z-index: 150;">
+                        <ul class="d-flex g-5 list-style-none m-0 p-0">
+                            <li class="pt-2">
+                                <a href="#home" style="padding: 10;">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about">About</a>
+                            </li>
+                            <li>
+                                <a href="#services">Services</a>
+                            </li>
+                            <li>
+                                <a href="#projects">Projects</a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                            </li>
+                            <li onclick="theme();" id="helper" class="pb-2">
+                                Dark/Light mode
+                            </li>
+                        </ul>
+                </div>
+            </div>
+
+            <!-- End of Header -->
+
+
+
+            <!-- Body -->
+                <!-- 1. Home -->
+                <div class="container">
+                    <div class="body" id='home'>
+                        <div class="row" id="start">
+                            <div class="col-12 col-md-6">
+                                <div class="m-1 p-1 m-md-2 p-md-2">
+                                    <div class="my-0 my-md-3">
+                                        <div id="icons">
+                                            <i class="bi bi-person-bounding-box mx-2"></i>
+                                            <span>Description:</span>
+                                        </div>
+                                        <div>
+                                            <hr class="my-2">
+                                        </div>
+                                        <div class="m-0 p-2">
+                                            <p>Hello there, My name is 
+                                                <b>
+                                                    MEKDAD GHAZAL
+                                                </b>
+                                            </p>
+                                            <p>
+                                                I am Backend Develpor, using 
+                                                <a href="https://laravel.com/" id="laravel" class="laravel">
+                                                    Laravel framework  
+                                                </a>
+                                                With over 2 years of hands-on experience in web development.
+                                            </p>
+
+                                            <p >
+                                                 I have honed my skills in building robust and efficient backend systems.
+                                            </p>
+                                            <p>
+                                                 My journey in the world of programming began in December 2022.
+                                            </p>
+                                            <p>
+                                                With a knack for web development and design, I create stellar projects that stand out for their quality and excellence.
+                                            </p>
+
+                                            <p>
+                                                <i class="bi bi-calendar-week"></i>
+                                                <span>23 Years [Dec. 2000]</span>
+                                            </p>
+                                            <p>
+                                                <i class="bi bi-geo-alt"></i>
+                                                <span>Syria - Latakia</span>
+                                            </p>
+                                            
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6">
+                                <div class="m-2 p-2"  style="height:calc(100% - 1rem);" id="github">
+                                    <img id="img" src="images/1.jpg">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End of Home -->
+                <hr>
+                <!-- 2.About -->
+
+                <div class="container">
+                    <div class="m-4 p-2">
+                        <div class="row row-gap-4" id="about">
+                            <div class="col-md-6 col-lg-6">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <div data-aos="fade-down">
+                                        <div class="img-shapes">
+                                            <img loading="lazy" src="images/4.jpg" alt="me" class="sec-pic">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div data-aos="fade-left">
+                                <div class="d-flex about-me px-md-3" style="padding: 15px 0px;">
+                                    <h4>WELCOME</h4>
+                                    <h2 style="font-size:40px;">About
+                                        <span style="color:var(--bg-color-shape);">Me</span>
+                                    </h2>
+                                    <p>I hold a degree in Information Technology Engineering, specializing in Network and Computer Systems. I am seeking a position in Backend Development, leveraging my expertise in database construction, relationships, sessions, and tokens.</p>
+                                    <div id="shortLink" class="d-flex" >
+                                        <a href="https://www.linkedin.com/in/mekdad-ghazal-it/" target="_blank"  class="mt-1">
+                                           <svg style="font-size: 35px;" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g id="LinkedIn"><g><path d="M18.44,3.06H5.56a2.507,2.507,0,0,0-2.5,2.5V18.44a2.507,2.507,0,0,0,2.5,2.5H18.44a2.5,2.5,0,0,0,2.5-2.5V5.56A2.5,2.5,0,0,0,18.44,3.06Zm1.5,15.38a1.511,1.511,0,0,1-1.5,1.5H5.56a1.511,1.511,0,0,1-1.5-1.5V5.56a1.511,1.511,0,0,1,1.5-1.5H18.44a1.511,1.511,0,0,1,1.5,1.5Z"></path><g><path d="M6.376,10.748a1,1,0,1,1,2,0v6.5h0a1,1,0,0,1-2,0Z"></path><circle cx="7.376" cy="6.744" r="1"></circle><path d="M17.62,13.37v3.88a1,1,0,1,1-2,0V13.37a1.615,1.615,0,1,0-3.23,0v3.88a1,1,0,0,1-2,0v-6.5a1.016,1.016,0,0,1,1-1,.94.94,0,0,1,.84.47,3.609,3.609,0,0,1,5.39,3.15Z"></path></g></g></g></svg>
+                                        </a>
+                                        <a  href="https://github.com/MekdadGhazal" target="_blank">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <button id="contactButton">
+                                        <a style="color: #fff; text-decoration: none;" class="d-block d-md-none">via WhatsApp</a>
+                                        <a style="color: #fff; text-decoration: none;" class="d-none d-md-block">contact me via WhatsApp</a>
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End of About -->
+
+                <hr>
+
+                <!-- Experineces -->
+                <div class="container">
+                    <div class="m-4 p-2">
+                    <div class="row row-gap-4">
+                        <div class="col-md-6 col-lg-6">
+                            <div data-aos="flip-left">
+                                <div class="d-flex about-me" style="padding: 15px 0px;">
+                                    <h4>Favorite 
+                                        <span style="color:var(--bg-color-shape);">Skills</span>
+                                    </h4>
+                                    <h3 style="font-size:40px;">My Skills</h3>
+                                    <p>See fully what skills I have and perform, to develop the projects for you.</p>
+                                    <button id="projectButton">
+                                        <a style="color:#fff;">see projects</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="row" style="padding: 15px 0px;">
+                                    <div class="col-lg-3 col-md-6 col-6">
+                                        <div data-aos="zoom-in-up">
+                                            <h5 title="HTML" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                                <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path>
+                                                    </svg>
+                                                </span>
+                                            HTML
+                                        </h5>
+                                        <h5 title="CSS" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                            <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3.1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2.1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"></path>
+                                                </svg>
+                                            </span>
+                                        CSS
+                                        </h5>
+                                        <h5 title="JavaScript" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                            <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" version="1.1" viewBox="0 0 32 32" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M4.698 3.419l2.057 23.073 9.231 2.563 9.256-2.566 2.059-23.069h-22.604zM13.226 9.394l-0.409 4.441 9.671 0.001-0.069 0.76-0.665 7.45-0.042 0.478-5.804 1.609-5.796-1.609-0.396-4.443h2.84l0.202 2.257 3.154 0.85 3.156-0.852 0.328-3.67-9.671-0.001 0.069-0.76 0.665-7.45 0.209-2.086h11.287l0.131 1.598 0.403 4.453h-2.841l-0.262-2.922-2.889-0.174h-0.515v-0.004l-2.755 0.074z"></path>
+                                                </svg>
+                                            </span>
+                                        JavaScript
+                                        </h5>
+                                        
+                                    </div>
+
+                                    </div>
+                                        <div class="col-lg-3 col-md-6 col-6">
+                                            <div data-aos="zoom-in">
+                                                <h5 title="Bootstrap" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                                    <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M333.5,201.4c0-22.1-15.6-34.3-43-34.3h-50.4v71.2h42.5C315.4,238.2,333.5,225,333.5,201.4z M517,188.6 c-9.5-30.9-10.9-68.8-9.8-98.1c1.1-30.5-22.7-58.5-54.7-58.5H123.7c-32.1,0-55.8,28.1-54.7,58.5c1,29.3-0.3,67.2-9.8,98.1 c-9.6,31-25.7,50.6-52.2,53.1v28.5c26.4,2.5,42.6,22.1,52.2,53.1c9.5,30.9,10.9,68.8,9.8,98.1c-1.1,30.5,22.7,58.5,54.7,58.5h328.7 c32.1,0,55.8-28.1,54.7-58.5c-1-29.3,0.3-67.2,9.8-98.1c9.6-31,25.7-50.6,52.1-53.1v-28.5C542.7,239.2,526.5,219.6,517,188.6z M300.2,375.1h-97.9V136.8h97.4c43.3,0,71.7,23.4,71.7,59.4c0,25.3-19.1,47.9-43.5,51.8v1.3c33.2,3.6,55.5,26.6,55.5,58.3 C383.4,349.7,352.1,375.1,300.2,375.1z M290.2,266.4h-50.1v78.4h52.3c34.2,0,52.3-13.7,52.3-39.5 C344.7,279.6,326.1,266.4,290.2,266.4z"></path>
+                                                        </svg>
+                                                    </span>
+                                                Bootstrap
+                                            </h5>
+                                            <h5 title="Responsive Web" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                    <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16 64C16 28.7 44.7 0 80 0H304c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H80c-35.3 0-64-28.7-64-64V64zM224 448a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zM304 64H80V384H304V64z"></path>
+                                        </svg>
+                                    </span>
+                                Responsive Web
+                            </h5>
+                            <h5 title="Git" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M100.59 334.24c48.57 3.31 58.95 2.11 58.95 11.94 0 20-65.55 20.06-65.55 1.52.01-5.09 3.29-9.4 6.6-13.46zm27.95-116.64c-32.29 0-33.75 44.47-.75 44.47 32.51 0 31.71-44.47.75-44.47zM448 80v352a48 48 0 0 1-48 48H48a48 48 0 0 1-48-48V80a48 48 0 0 1 48-48h352a48 48 0 0 1 48 48zm-227 69.31c0 14.49 8.38 22.88 22.86 22.88 14.74 0 23.13-8.39 23.13-22.88S258.62 127 243.88 127c-14.48 0-22.88 7.84-22.88 22.31zM199.18 195h-49.55c-25-6.55-81.56-4.85-81.56 46.75 0 18.8 9.4 32 21.85 38.11C74.23 294.23 66.8 301 66.8 310.6c0 6.87 2.79 13.22 11.18 16.76-8.9 8.4-14 14.48-14 25.92C64 373.35 81.53 385 127.52 385c44.22 0 69.87-16.51 69.87-45.73 0-36.67-28.23-35.32-94.77-39.38l8.38-13.43c17 4.74 74.19 6.23 74.19-42.43 0-11.69-4.83-19.82-9.4-25.67l23.38-1.78zm84.34 109.84l-13-1.78c-3.82-.51-4.07-1-4.07-5.09V192.52h-52.6l-2.79 20.57c15.75 5.55 17 4.86 17 10.17V298c0 5.62-.31 4.58-17 6.87v20.06h72.42zM384 315l-6.87-22.37c-40.93 15.37-37.85-12.41-37.85-16.73v-60.72h37.85v-25.41h-35.82c-2.87 0-2 2.52-2-38.63h-24.18c-2.79 27.7-11.68 38.88-34 41.42v22.62c20.47 0 19.82-.85 19.82 2.54v66.57c0 28.72 11.43 40.91 41.67 40.91 14.45 0 30.45-4.83 41.38-10.2z"></path>
+                    </svg>
+                </span>
+            Git</h5>
+           
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-6">
+                            <div data-aos="zoom-in-left">
+                                
+                            <h5 title="Debugging" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                                    <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 11C10 10.4477 10.4477 10 11 10H13C13.5523 10 14 10.4477 14 11C14 11.5523 13.5523 12 13 12H11C10.4477 12 10 11.5523 10 11Z" fill="currentColor"></path>
+                                        <path d="M11 14C10.4477 14 10 14.4477 10 15C10 15.5523 10.4477 16 11 16H13C13.5523 16 14 15.5523 14 15C14 14.4477 13.5523 14 13 14H11Z" fill="currentColor"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09447 4.74918C8.41606 4.03243 8 3.0648 8 2H10C10 3.10457 10.8954 4 12 4C13.1046 4 14 3.10457 14 2H16C16 3.0648 15.5839 4.03243 14.9055 4.74918C16.1782 5.45491 17.1673 6.6099 17.6586 8H19C19.5523 8 20 8.44772 20 9C20 9.55229 19.5523 10 19 10H18V12H19C19.5523 12 20 12.4477 20 13C20 13.5523 19.5523 14 19 14H18V16H19C19.5523 16 20 16.4477 20 17C20 17.5523 19.5523 18 19 18H17.6586C16.8349 20.3304 14.6124 22 12 22C9.38756 22 7.16508 20.3304 6.34141 18H5C4.44772 18 4 17.5523 4 17C4 16.4477 4.44772 16 5 16H6V14H5C4.44772 14 4 13.5523 4 13C4 12.4477 4.44772 12 5 12H6V10H5C4.44772 10 4 9.55229 4 9C4 8.44772 4.44772 8 5 8H6.34141C6.83274 6.6099 7.82181 5.45491 9.09447 4.74918ZM8 16V10C8 7.79086 9.79086 6 12 6C14.2091 6 16 7.79086 16 10V16C16 18.2091 14.2091 20 12 20C9.79086 20 8 18.2091 8 16Z" fill="currentColor"></path>
+                                    </svg>
+                                </span>
+                            Debugging
+                        </h5>
+                        <h5 title="Problem Solving" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                            <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path d="M3 12c0 2.21.91 4.2 2.36 5.64L3 20h6v-6l-2.24 2.24A6.003 6.003 0 0 1 5 12a5.99 5.99 0 0 1 4-5.65V4.26C5.55 5.15 3 8.27 3 12zm8 5h2v-2h-2v2zM21 4h-6v6l2.24-2.24A6.003 6.003 0 0 1 19 12a5.99 5.99 0 0 1-4 5.65v2.09c3.45-.89 6-4.01 6-7.74 0-2.21-.91-4.2-2.36-5.64L21 4zm-10 9h2V7h-2v6z"></path>
+                                </svg>
+                            </span>
+                        Problem Solving
+                    </h5>
+                    <h5 title="SQL" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                        <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" t="1569683650778" viewBox="0 0 1024 1024" version="1.1" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                <defs></defs>
+                                <path d="M301.3 496.7c-23.8 0-40.2-10.5-41.6-26.9H205c0.9 43.4 36.9 70.3 93.9 70.3 59.1 0 95-28.4 95-75.5 0-35.8-20-55.9-64.5-64.5l-29.1-5.6c-23.8-4.7-33.8-11.9-33.8-24.2 0-15 13.3-24.5 33.4-24.5 20.1 0 35.3 11.1 36.6 27h53c-0.9-41.7-37.5-70.3-90.3-70.3-54.4 0-89.7 28.9-89.7 73 0 35.5 21.2 58 62.5 65.8l29.7 5.9c25.8 5.2 35.6 11.9 35.6 24.4 0.1 14.7-14.5 25.1-36 25.1z"></path>
+                                <path d="M928 140H96c-17.7 0-32 14.3-32 32v496c0 17.7 14.3 32 32 32h380v112H304c-8.8 0-16 7.2-16 16v48c0 4.4 3.6 8 8 8h432c4.4 0 8-3.6 8-8v-48c0-8.8-7.2-16-16-16H548V700h380c17.7 0 32-14.3 32-32V172c0-17.7-14.3-32-32-32z m-40 488H136V212h752v416z"></path>
+                                <path d="M828.5 486.7h-95.8V308.5h-57.4V534h153.2zM529.9 540.1c14.1 0 27.2-2 39.1-5.8l13.3 20.3h53.3L607.9 511c21.1-20 33-51.1 33-89.8 0-73.3-43.3-118.8-110.9-118.8s-111.2 45.3-111.2 118.8c-0.1 73.7 43 118.9 111.1 118.9z m0-190c31.6 0 52.7 27.7 52.7 71.1 0 16.7-3.6 30.6-10 40.5l-5.2-6.9h-48.8L542 491c-3.9 0.9-8 1.4-12.2 1.4-31.7 0-52.8-27.5-52.8-71.2 0.1-43.6 21.2-71.1 52.9-71.1z"></path>
+                            </svg>
+                        </span>
+                    SQL</h5>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-6" >
+                <div data-aos="zoom-out">
+                    <h5 title="Laravel" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                        <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="2500" viewBox="0 -.11376601 49.74245785 51.31690859" width="2418"><path d="m49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1 -.402.694l-9.209 5.302v10.509c0 .286-.152.55-.4.694l-19.223 11.066c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1 -.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054l-19.219-11.066a.801.801 0 0 1 -.402-.694v-32.916c0-.072.01-.142.028-.21.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093.023-.023.053-.04.079-.06.029-.024.055-.05.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068.026.02.055.038.078.06.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51c0-.07.01-.141.028-.208.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06.03-.024.056-.05.088-.069h.001l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068.025.02.054.038.077.06.028.029.048.062.072.094.018.024.04.045.054.071.023.039.036.082.052.124.009.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.505v-9.13l-4.57 2.61-13.05 7.448v9.216zm-36.84-31.068v31.068l17.618 10.143v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066-.025-.02-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084-.02-.027-.044-.05-.06-.078l-.001-.003c-.018-.03-.029-.066-.042-.1-.013-.03-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-21.483l-4.645-2.676-3.363-1.934zm8.81-5.994-8.007 4.609 8.005 4.609 8.006-4.61-8.006-4.608zm4.164 28.764 4.645-2.674v-20.096l-3.363 1.936-4.646 2.675v20.096zm24.667-23.325-8.006 4.609 8.006 4.609 8.005-4.61zm-.801 10.605-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937zm-18.422 20.561 11.743-6.704 5.87-3.35-8-4.606-9.211 5.303-8.395 4.833z" fill="var(--bg-color-shape)"/></svg>
+                            </span>
+                        Laravel
+                    </h5>
+                    <h5 title="Postman" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                        <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2500" height="2500" viewBox="-13.58674873666481 -3.5096047119942106 81.71274873666479 72.05384966725056">
+                                <style>.C{fill:var(--bg-color-shape);}.D{fill:#fff}</style>
+                                <path d="M57.327 12.44a32 32 0 1 0-5.761 44.88c13.98-10.804 16.56-30.895 5.76-44.88z" class="C"/><path d="M42.793 20.388L29.3 33.988l-3.813-3.92c13.28-13.28 14.613-12.08 17.307-9.68z" class="D"/><path d="M29.3 34.36a.48.48 0 0 1-.32-.133l-3.84-3.84a.48.48 0 0 1 0-.667c13.093-13.093 14.88-12.48 17.973-9.68a.427.427 0 0 1 .16.347c.02.13-.03.263-.133.347L29.647 34.228a.506.506 0 0 1-.347.133zm-3.147-4.293l3.147 3.147 12.8-12.8a2.88 2.88 0 0 0-3.787-.64c-2.32 1.04-6.053 4.213-12.16 10.293z" class="C"/><path d="M33.167 37.748l-3.68-3.76L42.98 20.654c3.627 3.547-1.76 9.467-9.813 17.093z" class="D"/><path d="M33.167 38.228a.56.56 0 0 1-.32-.133l-3.76-3.68a.56.56 0 0 1 0-.427.517.517 0 0 1 0-.347L42.58 20.148a.506.506 0 0 1 .693 0 4.136 4.136 0 0 1 1.333 3.173c0 3.6-4.107 8.133-11.093 14.747a.56.56 0 0 1-.347.16zm-2.987-4.24L33.193 37c5.333-5.04 10.427-10.24 10.453-13.76a3.04 3.04 0 0 0-.693-2.053z" class="C"/><path d="M25.593 30.148l2.667 2.667a.16.16 0 0 1 0 .24l-5.627 1.2a.533.533 0 0 1-.48-.907l3.28-3.253s.107 0 .16.053z" class="D"/><path d="M22.5 34.788a1.04 1.04 0 0 1-.88-.507 1.014 1.014 0 0 1 .187-1.2l3.253-3.28a.64.64 0 0 1 .853 0l2.667 2.667c.158.15.22.377.16.587s-.236.377-.453.427l-5.627 1.2zm2.987-4.053l-3.013 3.013 4.987-1.067zm.24-.24z" class="C"/><path d="M49.967 12.894c-1.93-1.862-4.962-1.94-6.986-.183s-2.37 4.773-.794 6.943 4.547 2.778 6.847 1.4l-3.627-3.627z" class="D"/><path d="M46.367 22.28a5.65 5.65 0 0 1-5.156-3.508 5.667 5.667 0 0 1 1.2-6.118 5.71 5.71 0 0 1 8 0c.102.086.16.213.16.347a.46.46 0 0 1-.16.347l-4.32 4.08 3.28 3.227a.45.45 0 0 1 .133.4.48.48 0 0 1-.213.347 5.8 5.8 0 0 1-2.933.88zm0-10.347c-1.9.01-3.6 1.153-4.313 2.9s-.325 3.758 1.007 5.1a4.665 4.665 0 0 0 5.173.987l-3.147-3.147a.427.427 0 0 1 0-.667l4.16-4.187a4.785 4.785 0 0 0-2.88-.987z" class="C"/><path d="M50.047 12.974l-4.56 4.533 3.627 3.627a5.52 5.52 0 0 0 1.013-.747 5.333 5.333 0 0 0-.08-7.413z" class="D"/><path d="M49.033 21.534a.4.4 0 0 1-.32-.133l-3.627-3.627a.427.427 0 0 1 0-.667l4.533-4.453a.48.48 0 0 1 .8 0 5.6 5.6 0 0 1 0 8 4.88 4.88 0 0 1-1.067.853.43.43 0 0 1-.32.027zM46.1 17.428l3.013 3.013a5.12 5.12 0 0 0 .587-.48 4.72 4.72 0 0 0 1.387-3.333 4.58 4.58 0 0 0-1.147-3.04z" class="C"/><path d="M43.353 20.948a1.948 1.948 0 0 0-2.667 0L28.607 33l2 2.027 12.773-11.2a1.977 1.977 0 0 0-.027-2.88z" class="D"/><path d="M30.5 35.508a.48.48 0 0 1-.32-.133l-2.027-2.027a.48.48 0 0 1 0-.667l12.08-12.027a2.454 2.454 0 0 1 4.187 1.813 2.51 2.51 0 0 1-.827 1.76l-12.773 11.2a.455.455 0 0 1-.32.08zM29.087 33l1.333 1.36 12.533-10.907c.31-.27.495-.656.507-1.067s-.15-.813-.453-1.093a1.493 1.493 0 0 0-2.107 0z" class="C"/><path d="M19.247 46.734a.27.27 0 0 0 0 .32l.533 2.32a.688.688 0 0 1-.332.7.65.65 0 0 1-.762-.077l-3.653-3.52L26.42 35h3.947l2.667 2.667a60.54 60.54 0 0 1-13.787 9.067z" class="D"/><path d="M19.007 50.654c-.302-.006-.6-.13-.8-.347l-3.493-3.493a.427.427 0 0 1 0-.667L26.18 34.654a.45.45 0 0 1 .24-.133h3.973a.48.48 0 0 1 .32 0l2.667 2.667a.426.426 0 0 1 .133.373.43.43 0 0 1-.16.347l-.213.187a65.33 65.33 0 0 1-13.68 8.773l.507 2.16a1.15 1.15 0 0 1-1.093 1.413zm-3.253-4.187L18.9 49.64a.16.16 0 0 0 .213 0 .16.16 0 0 0 0-.187l-.533-2.32a.744.744 0 0 1 .4-.853 65.56 65.56 0 0 0 13.333-8.587l-2.187-2.187h-3.573zm3.84.48z" class="C"/><path d="M12.287 49.214l2.667-2.667 4.107 4.107-6.533-.453a.534.534 0 0 1-.24-.986z" class="D"/><path d="M19.14 51.054l-6.507-.453c-.386-.036-.718-.3-.854-.653s-.053-.772.214-1.054l2.667-2.667a.48.48 0 0 1 .667 0l4.08 4.08a.452.452 0 0 1 0 .533.507.507 0 0 1-.267.213zm-6.507-1.493l5.333.347-2.933-2.747z" class="C"/><path d="M30.74 35.322l-5.387.827 3.12-3.093z" class="D"/><path d="M25.353 36.654a.456.456 0 0 1-.427-.267.45.45 0 0 1 0-.533l3.093-3.12a.506.506 0 0 1 .693 0L30.98 35a.45.45 0 0 1 0 .48.47.47 0 0 1-.373.347l-5.333.827zm3.12-2.907L26.74 35.48l2.987-.453z" class="C"/><path d="M30.74 35.32l-3.76.48a.48.48 0 0 1-.453-.8l1.947-1.947z" class="D"/><path d="M26.873 36.308a.987.987 0 0 1-.853-.507.96.96 0 0 1 .16-1.147l1.947-1.947a.506.506 0 0 1 .693 0l2.267 2.267a.48.48 0 0 1-.293.827l-3.733.48zm0-.987l2.827-.347-1.253-1.253-1.6 1.6zm23.2-19.28a.4.4 0 0 0-.507-.16.37.37 0 0 0-.186.22.377.377 0 0 0 .026.287c.187.393.135.858-.133 1.2a.338.338 0 0 0-.1.253.38.38 0 0 0 .1.253.29.29 0 0 0 .213 0 .35.35 0 0 0 .347-.107 1.84 1.84 0 0 0 .24-1.947z" class="C"/></svg>
+                        </span>
+                    Postman
+                </h5>
+                <h5 title="API" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                    <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="800px" width="800px" version="1.1" id="Capa_1" viewBox="0 0 511 511" xml:space="preserve">
+<g>
+    <path  d="M492.168,309.579l-17.626-10.177c2.96-14.723,4.458-29.466,4.458-43.902c0-14.646-1.474-29.403-4.384-43.946l17.552-10.134   c5.436-3.138,9.325-8.206,10.949-14.269s0.791-12.396-2.348-17.832l-48-83.139c-3.139-5.436-8.206-9.325-14.269-10.949   c-6.064-1.624-12.396-0.791-17.833,2.348l-17.566,10.142C380.912,68.2,354.798,53.092,327,43.692V23.5   C327,10.542,316.458,0,303.5,0h-96C194.542,0,184,10.542,184,23.5v20.193c-27.65,9.362-53.728,24.49-75.999,44.088L90.332,77.579   c-5.437-3.139-11.77-3.973-17.833-2.348c-6.063,1.625-11.13,5.513-14.269,10.949l-48,83.139   c-3.139,5.436-3.972,11.769-2.348,17.832s5.513,11.131,10.949,14.269l17.626,10.177C33.499,226.32,32,241.063,32,255.5   c0,14.644,1.474,29.401,4.384,43.945l-17.552,10.134c-11.222,6.479-15.08,20.879-8.602,32.102l48,83.139   c6.479,11.221,20.879,15.08,32.102,8.601l17.565-10.142c22.19,19.521,48.303,34.629,76.103,44.03V487.5   c0,12.958,10.542,23.5,23.5,23.5h96c12.958,0,23.5-10.542,23.5-23.5v-20.193c27.651-9.362,53.729-24.49,76-44.087l17.668,10.201   c11.221,6.479,25.623,2.62,32.102-8.601l48-83.139C507.248,330.458,503.39,316.058,492.168,309.579z M487.779,334.181l-48,83.138   c-2.343,4.06-7.552,5.455-11.611,3.111l-22.392-12.928c-2.845-1.643-6.43-1.242-8.842,0.989   c-22.893,21.173-50.437,37.148-79.653,46.199c-3.14,0.973-5.281,3.877-5.281,7.164V487.5c0,4.687-3.813,8.5-8.5,8.5h-96   c-4.687,0-8.5-3.813-8.5-8.5v-25.645c0-3.287-2.141-6.191-5.28-7.164c-29.396-9.107-56.974-25.062-79.755-46.139   c-1.421-1.315-3.25-1.995-5.095-1.995c-1.286,0-2.579,0.33-3.748,1.005L82.832,420.43c-4.06,2.343-9.268,0.948-11.611-3.111   l-48-83.138c-2.343-4.059-0.947-9.268,3.111-11.612l22.272-12.859c2.844-1.642,4.289-4.942,3.566-8.146   C48.739,286.357,47,270.858,47,255.5c0-15.1,1.765-30.584,5.247-46.022c0.722-3.203-0.723-6.504-3.566-8.145L26.332,188.43   c-1.966-1.135-3.372-2.968-3.96-5.161c-0.587-2.193-0.286-4.484,0.849-6.45l48-83.139c1.135-1.966,2.968-3.373,5.162-3.96   c2.192-0.588,4.484-0.286,6.45,0.849l22.392,12.928c2.846,1.644,6.43,1.242,8.842-0.989c22.894-21.173,50.437-37.148,79.653-46.199   c3.14-0.973,5.281-3.877,5.281-7.164V23.5c0-4.687,3.813-8.5,8.5-8.5h96c4.687,0,8.5,3.813,8.5,8.5v25.645   c0,3.287,2.141,6.191,5.28,7.164c29.395,9.106,56.973,25.061,79.755,46.139c2.412,2.232,5.997,2.633,8.843,0.99l22.29-12.869   c1.967-1.135,4.258-1.437,6.45-0.849c2.193,0.588,4.026,1.994,5.162,3.96l48,83.139c1.135,1.966,1.437,4.257,0.849,6.45   c-0.588,2.193-1.994,4.026-3.96,5.161l-22.272,12.859c-2.844,1.642-4.289,4.943-3.566,8.146c3.431,15.206,5.17,30.704,5.17,46.065   c0,15.1-1.765,30.584-5.247,46.021c-0.722,3.203,0.723,6.503,3.566,8.145l22.349,12.903   C488.727,324.913,490.123,330.122,487.779,334.181z"/>
+    <path d="M255.5,104C171.962,104,104,171.963,104,255.5S171.962,407,255.5,407S407,339.037,407,255.5S339.038,104,255.5,104z    M255.5,392C180.234,392,119,330.766,119,255.5S180.234,119,255.5,119S392,180.234,392,255.5S330.766,392,255.5,392z"/>
+    <path d="M283.5,216h-28c-4.142,0-7.5,3.358-7.5,7.5v64c0,4.142,3.358,7.5,7.5,7.5s7.5-3.358,7.5-7.5V271h20.5   c15.164,0,27.5-12.336,27.5-27.5S298.664,216,283.5,216z M283.5,256H263v-25h20.5c6.893,0,12.5,5.607,12.5,12.5   S290.393,256,283.5,256z"/>
+    <path d="M214.522,220.867c-1.098-2.927-3.896-4.867-7.022-4.867h-8c-3.126,0-5.925,1.939-7.022,4.867l-24,64   c-1.455,3.878,0.511,8.201,4.389,9.656c3.878,1.455,8.201-0.511,9.656-4.389L186.697,279h33.605l4.175,11.133   c1.129,3.011,3.987,4.869,7.023,4.869c0.875,0,1.765-0.154,2.632-0.479c3.878-1.454,5.844-5.778,4.389-9.656L214.522,220.867z    M192.322,264l11.178-29.807L214.678,264H192.322z"/>
+    <path d="M327.5,216c-4.142,0-7.5,3.358-7.5,7.5v64c0,4.142,3.358,7.5,7.5,7.5s7.5-3.358,7.5-7.5v-64   C335,219.358,331.642,216,327.5,216z"/>
+    <path d="M309.152,87.3c5.205,1.659,10.394,3.586,15.421,5.726c0.958,0.408,1.954,0.601,2.934,0.601c2.916,0,5.69-1.712,6.904-4.564   c1.622-3.811-0.152-8.216-3.963-9.838c-5.458-2.323-11.09-4.415-16.742-6.216c-3.945-1.258-8.165,0.922-9.423,4.868   C303.026,81.823,305.206,86.042,309.152,87.3z"/>
+    <path d="M100.45,339.904c-1.984-3.636-6.541-4.976-10.176-2.992c-3.636,1.984-4.976,6.54-2.992,10.176   c3.112,5.704,6.557,11.315,10.239,16.677c1.454,2.117,3.801,3.255,6.189,3.255c1.463,0,2.941-0.427,4.239-1.318   c3.415-2.345,4.282-7.014,1.937-10.428C106.493,350.332,103.318,345.161,100.45,339.904z"/>
+    <path d="M240.14,431.341c-40.189-3.463-78.337-20.879-107.416-49.041c-2.976-2.882-7.724-2.805-10.605,0.17   c-2.881,2.976-2.806,7.724,0.17,10.605c31.55,30.555,72.947,49.452,116.563,53.21c0.219,0.019,0.436,0.028,0.652,0.028   c3.851,0,7.127-2.949,7.464-6.856C247.323,435.331,244.266,431.697,240.14,431.341z"/>
+    <path d="M363.425,97.287c-3.42-2.337-8.087-1.459-10.424,1.96c-2.337,3.42-1.459,8.087,1.96,10.424   c34.844,23.813,60.049,59.248,70.972,99.776c0.902,3.346,3.93,5.55,7.237,5.55c0.646,0,1.303-0.084,1.956-0.26   c4-1.078,6.368-5.194,5.29-9.193C428.564,161.564,401.221,123.118,363.425,97.287z"/>
+</g>
+</svg>
+                    </span>
+                API
+            </h5>
+            
+        </div>
+    </div>
+    </div>
+                            <div style="text-align: center;" data-aos="flip-up">
+                                <h5 title="Laravel" style="color: white; margin-bottom: 15px; font-size: 0.9rem; text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">
+                                    <span style="color: rgb(0, 204, 146); font-size: 1.5rem; margin-right: 5px;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113.02 28.1942764712217" width="2500" height="624" style="width: 12rem !important;height: 3rem !important;">
+                                            <path fill="#var(--bg-color-shape)" d="M4.44 0v23.05h8.34v3.97H0V0h4.44zm24 11.46V9.03h4.22v18h-4.2v-2.44c-.58.9-1.38 1.6-2.42 2.1-1.04.53-2.1.78-3.15.78-1.37 0-2.62-.25-3.75-.75a8.76 8.76 0 0 1-2.92-2.06 9.6 9.6 0 0 1-1.9-3 9.72 9.72 0 0 1-.67-3.64c0-1.26.23-2.47.68-3.6a9.56 9.56 0 0 1 1.9-3.04 8.77 8.77 0 0 1 2.9-2.08c1.14-.5 2.4-.75 3.75-.75 1.05 0 2.1.26 3.14.77 1.04.52 1.84 1.22 2.4 2.12zm-.38 8.77a6.3 6.3 0 0 0 .4-2.2c0-.78-.14-1.5-.4-2.2A5.58 5.58 0 0 0 26.98 14a5.23 5.23 0 0 0-1.68-1.22 5.16 5.16 0 0 0-2.18-.47c-.8 0-1.52.17-2.16.48A5.3 5.3 0 0 0 19.3 14a5.3 5.3 0 0 0-1.06 1.83 6.56 6.56 0 0 0-.37 2.2c0 .77.12 1.5.37 2.2.24.7.6 1.3 1.06 1.8a5.28 5.28 0 0 0 1.66 1.25c.64.3 1.36.46 2.16.46s1.53-.15 2.18-.46a5.22 5.22 0 0 0 1.68-1.24 5.58 5.58 0 0 0 1.08-1.8zm7.92 6.8v-18H47.4v4.14h-7.22v13.85h-4.2zm26.67-15.57V9.03h4.2v18h-4.2v-2.44c-.56.9-1.37 1.6-2.4 2.1-1.05.53-2.1.78-3.16.78-1.37 0-2.62-.25-3.75-.75a8.76 8.76 0 0 1-2.92-2.06 9.6 9.6 0 0 1-1.9-3 9.72 9.72 0 0 1-.66-3.64c0-1.26.22-2.47.67-3.6a9.56 9.56 0 0 1 1.9-3.04 8.77 8.77 0 0 1 2.9-2.08c1.14-.5 2.4-.75 3.75-.75 1.05 0 2.1.26 3.14.77 1.04.52 1.85 1.22 2.4 2.12zm-.38 8.77a6.3 6.3 0 0 0 .38-2.2c0-.78-.13-1.5-.38-2.2A5.58 5.58 0 0 0 61.2 14a5.23 5.23 0 0 0-1.7-1.22c-.65-.3-1.38-.47-2.17-.47-.8 0-1.52.17-2.17.48A5.3 5.3 0 0 0 53.5 14a5.3 5.3 0 0 0-1.06 1.83 6.56 6.56 0 0 0-.36 2.2c0 .77.12 1.5.36 2.2.25.7.6 1.3 1.06 1.8a5.28 5.28 0 0 0 1.66 1.25c.65.3 1.37.46 2.17.46.8 0 1.52-.15 2.18-.46a5.22 5.22 0 0 0 1.7-1.24 5.58 5.58 0 0 0 1.07-1.8zm21.46-11.2H88l-6.9 18h-5.3l-6.9-18h4.25l5.3 13.78 5.28-13.77zm13.44-.46c5.73 0 9.64 5.08 8.9 11.02H92.1c0 1.54 1.58 4.54 5.3 4.54 3.2 0 5.35-2.8 5.35-2.8l2.84 2.2c-2.55 2.7-4.63 3.95-7.9 3.95-5.82 0-9.76-3.7-9.76-9.47 0-5.23 4.08-9.46 9.23-9.46zm-5.05 7.9h10.1c-.04-.35-.6-4.56-5.08-4.56-4.5 0-4.98 4.22-5.02 4.56zM108.82 27V0h4.2v27.02h-4.2z"/></svg>
+                                    </span>
+                                </h5>
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of experience -->
+                <hr>
+
+
+                <div class="container" id="services">
+                    <div class="m-4 p-2">
+                        <div class="row row-gap-4">
+                            <div class="title">
+                                <p></p>
+                                <h1>My Services</h1>
+                                <h4>Check it
+                                    <span style="color:var(--bg-color-shape);">Now</span>
+                                </h4>
+                            </div>
+                            <div class="t-body row row-gap-4">
+                                <div class="col-md-4 col-lg-4">
+                                    <div class="item-services" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                                        <span>
+                                            <i class="fas fa-laptop-code"></i>
+                                        </span>
+                                        <h5>Web Developer</h5>
+                                        <p>Experienced Laravel Web Developer creating dynamic, secure web applications with a focus on efficiency and scalability. Skilled in Laravel's MVC architecture, authentication, and ORM for tailored, high-performance solutions.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4">
+                                    <div class="item-services" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
+                                        <span>
+                                            <i class="fas fa-database"></i>
+                                        </span>
+                                        <h5>Desgin Databases</h5>
+                                        <p>Proficient in designing databases to create efficient and structured data systems. Skilled in developing database schemas that optimize data storage and retrieval, ensuring robust and organized information management.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-lg-4">
+                                    <div class="item-services" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                                        <span>
+                                            <i class="fas fa-chalkboard-teacher"></i>
+                                        </span>
+                                        <h5>Web Training</h5>
+                                        <p>Experienced in providing comprehensive web training sessions tailored to diverse audiences. Skilled in delivering engaging and informative workshops, tutorials, and courses on web development concepts, tools, and technologies.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end e -->
+
+                <hr>
+
+
+                <!-- Projects -->
+
+                <div class="container" id="projects">
+                    <div class="m-4 p-2">
+                        <div class="row row-gap-4">
+                            <div class="title">
+                                <p></p>
+                                <h1>My Projects</h1>
+                                <h4>Up to
+                                    <span style="color:var(--bg-color-shape);">date</span>
+                                </h4>
+                            </div>
+                            <div class="t-body row row-gap-4">
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="item-services">
+                                        <div class="item">
+                                            <h3 style="color:var(--bg-color-shape);">Online Courses</h3>
+                                            <p>It's a platform for teachers to upload their videos and students need to subscribe their teacher channel.
+                                            Like Youtube, Coursera and Udemy</p>
+                                            <div class="item-explain">
+                                                <p class="d-none d-md-block">Advanced Laravel API skills. Features include user access to expert-led online courses, robust data handling, role-based functionalities, JWT authentication, and code reusability through components and traits.</p>
+                                                <p class="d-block d-md-none">
+                                                    <small>
+                                                        Advanced Laravel API skills. Features include user access to expert-led online courses, robust data handling, role-based functionalities, JWT authentication, and code reusability through components and traits.
+                                                    </small>
+                                                </p>
+                                                <p>
+                                                    <a href="https://github.com/MekdadGhazal/Online-Courses" target="_blank">
+                                                        Get the Code 
+                                                        <i class="fa fa-share"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="item-services">
+                                        <div class="item">
+                                            <h3 style="color:var(--bg-color-shape);">Jewelry Store</h3>
+                                            <p>It's a simple Store for Jewelry.Here You can Buy and add items to your Chart. We use a high-level of Authentication to keep your pruchase safe. We send a mail to you to get a details of your chart.</p>
+                                            <div class="item-explain">
+                                                <p class="d-none d-md-block">Laravel API project showcases expertise in web development for businesses, integrating Google Mail API. Key features include MVC architecture, entity relationships, JWT authentication, Google Mail API integration, and Laravel resources.</p>
+                                                <p class="d-block d-md-none">
+                                                    <small >
+                                                        Laravel API project showcases expertise in web development, integrating Google Mail API. include MVC architecture, entity relationships, JWT authentication, Google Mail API integration, and Laravel resources.
+                                                    </small>
+                                                </p>
+                                                <p>
+                                                    <a href="https://github.com/MekdadGhazal/Jewelry-Store" target="_blank">
+                                                        Get the Code 
+                                                        <i class="fa fa-share"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="item-services">
+                                        <div class="item">
+                                            <h3 style="color:var(--bg-color-shape);">Chatroom APP </h3>
+                                            <p>Hi, Hi, It's an C program using Socket programmig to create a Server-Client [Peer-to-Peer] Network Groups. You can send the channel port to friends to join. Enjoy!</p>
+                                            <div class="item-explain">
+                                                <p class="d-none d-md-block">C program with server and client functionalities, facilitating multiple users to communicate within a chatroom. It utilizes socket programming, threading, and string manipulation for seamless messaging.</p>
+                                                <p class="d-block d-md-none">
+                                                    <small>
+                                                        C program with server and client functionalities, facilitating multiple users to communicate within a chatroom. It utilizes socket programming, threading, and string manipulation for seamless messaging.
+                                                    </small>
+                                                </p>
+                                                <p>
+                                                    <a href="https://github.com/MekdadGhazal/Chatting-App" target="_blank">
+                                                        Get the Code 
+                                                        <i class="fa fa-share"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6 col-lg-4">
+                                    <div class="item-services">
+                                        <div class="item">
+                                            <h3 style="color:var(--bg-color-shape);">Security Algorithm</h3>
+                                            <p>Modern global algorithms used in Encryption and Decryption. Need more safe area to store your sensitive data, I advise you to use of them.</p>
+                                            <div class="item-explain">
+                                                <p class=" d-none d-md-block">Python algorithms implement a variety of encryption methods for security and network security, including RSA, Diffie-Hellman, Vigenère, and others, enhancing familiarity with DES and AES functionalities.
+                                                </p>
+                                                <p class="d-block d-md-none">
+                                                    <small>
+                                                        Python algorithms implement a variety of encryption methods for security and network security, including RSA, Diffie-Hellman, Vigenère, and others, enhancing familiarity with DES and AES functionalities.
+                                                    </small>
+                                                </p>
+                                                <p>
+                                                    <a href="https://github.com/MekdadGhazal/Security-Algorithms" target="_blank">
+                                                        Get the Code 
+                                                        <i class="fa fa-share"></i>
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End Projects -->
+
+                <hr>
+
+                <!-- Contact me -->
+
+                <div class="container" id="contact">
+                    <div class="m-4 p-2">
+                        <div>
+                            <div class="row">
+                                <div>
+                                    <h2>
+                                        Contact Me
+                                    <span style="color:var(--bg-color-shape);">Now</span>
+                                    </h2>
+                                </div>
+                                <div class="col-12">
+                                    <form class="d-flex align-items-center" style="flex-direction: column;">
+                                        <div class="d-flex p-2 pt-4 row form" style="width: calc(100% - 4rem);">
+                                            <div class="col-12 col-md-6 col-lg-6">
+                                                <input type="text" name="name" class="w-100 my-2" placeholder="Enter your full name" spellcheck required>
+                                            </div>
+                                            <div class="col-12 col-md-6 col-lg-6">
+                                                <input type="email" name="email" class="w-100 my-2" placeholder="Enter your email" spellcheck required>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex px-2 row form" style="width: calc(100% - 4rem);">
+                                            <div class="col-12">
+                                                <textarea name="body" class="w-100 p-2" placeholder="Enter your message here" spellcheck required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex px-2 row form" style="width: calc(100% - 4rem);">
+                                            <div class="col-12 text-center">
+                                                <input role='button' type="button" value="send message"  id="submitButton" class="m-2 mt-3 p-2 text-light">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- End ofContact me -->
+
+            <!-- End of Body -->
+
+            <hr>
+
+            <!-- Footer -->
+
+            <div class="container">
+                <footer class="text-center">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="d-flex p-2 pt-3 m-2 my-3 justify-content-center mb-1" style="gap: .5rem;">
+                                <div class="theme-color" style="background: #D32F2F;" onclick="changeTheme(this)"></div>
+                                <div class="theme-color" style="background: #4a7766;" onclick="changeTheme(this)"></div>
+                                <div class="theme-color" style="background: #2bb2e6;" onclick="changeTheme(this)"></div>
+                                <div class="theme-color" style="background: #dba913;" onclick="changeTheme(this)"></div>
+                                <div class="theme-color" style="background: #ee8e46;" onclick="changeTheme(this)"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="d-flex p-2 py-3 m-2 mt-0 mb-5 row">
+                                <div class="col-12 col-md-4">
+                                    <h5>MEKDAD GHAZAL</h5>
+                                    <p>
+                                        <span style="color:var(--bg-color-shape);">Backend Developer</span>
+                                    </p>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="footer-icons d-flex py-3 my-3 m-md-0 p-md-0 h-100 align-items-center">
+                                        <a  href="https://www.facebook.com/mekdad.ghazal.7/" target="_blank">
+                                            <i class="bi bi-facebook"></i>
+                                        </a>
+                                        <a href="mailto:eng.mekdad.ghazal@gmail.com" target="_blank">
+                                            <i class="bi bi-envelope-at-fill"></i>
+                                        </a>
+                                        <a id="download-cv">
+                                            <svg id="cv" stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                                <path d="M14 3v4a1 1 0 0 0 1 1h4" style="color: transparent;"></path>
+                                                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h9l5 5v11a2 2 0 0 1 -2 2z" style="color: transparent;"></path>
+                                                <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0"  id="cv-c"></path>
+                                                <path d="M14 11l2 6l2.5 -6"  id="cv-v"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4">
+                                    <div class="d-flex py-2 my-2 m-md-0 p-md-0 h-100 align-items-center justify-content-center">
+                                        <p class="m-0 ">All rights reserved. &copy;2024</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+
+
+            <!-- End of Footer -->
+        
+    </div>
+<!--     <div id="button" onclick="theme();">
+        <i class="bi bi-sun-fill" id="buttonShape"></i>
+    </div> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+</html>

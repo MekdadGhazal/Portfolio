@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
         	return;
 	    }
 	    
-	    var emailDomains = ['google.com', 'yahoo.com', 'hotmail.com'];
+	    var emailDomains = ['gmail.com', 'yahoo.com', 'hotmail.com'];
 	    var emailParts = email.split('@');
 	    var domain = emailParts[emailParts.length - 1];
 	    

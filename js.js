@@ -82,8 +82,8 @@ function theme() {
 document.addEventListener('DOMContentLoaded', () => {
 	const github = document.getElementById('github');
 	const projects = document.getElementById('projectButton');
-	const contact = document.getElementById('contactButton');
 
+	const whatsapp = document.getElementById('contactButtonWhatsApp');
 
 	github.addEventListener('click', () => {
 	    window.open('https://github.com/MekdadGhazal/', '_blank');
@@ -93,9 +93,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	    window.open('portfolio.html#projects', '_self');
 	});
 
-	contact.addEventListener('click', () => {
+	whatsapp.addEventListener('click', () => {
 	    window.open('https://wa.me/qr/T7IL66VMKKRTE1' , '_blank');
 	});
+
+
+	// const telegram = document.getElementById('contactButtonTelegram');
+
+	// telegram.addEventListener('click', () => {
+	//     window.open('https://t.me/iMekdad' , '_blank');
+	// });
 
 	var downloadCV = document.getElementById('download-cv');
 
@@ -118,7 +125,38 @@ document.addEventListener('DOMContentLoaded', () => {
 	    var name = document.querySelector('input[name="name"]').value;
 	    var email = document.querySelector('input[name="email"]').value;
 	    var message = document.querySelector('textarea[name="body"]').value;
+
+
+	    var alertMessageFillFields = document.getElementById('alert-message-fill-fields');
+		var alertMessageDomain = document.getElementById('alert-message-domain');
 	    
+        if (name.trim() === '' || email.trim() === '' || message.trim() === '') {
+        	// alert('Please fill in all fields.');
+
+        	alertMessageFillFields.classList.remove('d-none');
+	        setTimeout(function() {
+	        	alertMessageFillFields.classList.add('d-none');
+	         }, 2.5 * 1000);
+        	return;
+	    }
+	    
+	    var emailDomains = ['google.com', 'yahoo.com', 'hotmail.com'];
+	    var emailParts = email.split('@');
+	    var domain = emailParts[emailParts.length - 1];
+	    
+	    if (!emailDomains.includes(domain)) {
+	        // alert('Please provide a valid email address from Google, Yahoo, or Hotmail domains.');
+	        
+	        alertMessageDomain.classList.remove('d-none');
+	        setTimeout(function() {
+	        	alertMessageDomain.classList.add('d-none');
+	         }, 2.5 * 1000);
+
+	        return;
+	    }
+
+
+
 	    sendEmail(name, email, message);
 
 });

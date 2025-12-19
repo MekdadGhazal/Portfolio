@@ -160,7 +160,7 @@
 
                                             <p>
                                                 <i class="bi bi-calendar-week"></i>
-                                                <span>23 Years [Dec. 2000]</span>
+                                                <span id="my-age">23 Years [Dec. 2000]</span>
                                             </p>
                                             <p>
                                                 <i class="bi bi-geo-alt"></i>
@@ -682,5 +682,19 @@
 	<script>
 		AOS.init();
 	</script>
+	<script>
+        function calculateAge(birthDateString) {
+            const birthDate = new Date(birthDateString);
+            const today = new Date();
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const m = today.getMonth() - birthDate.getMonth();
+            if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+        }
+
+        document.getElementById('my-age').innerText = calculateAge('2000-12-28') + " Years";
+    </script>
 </body>
 </html>
